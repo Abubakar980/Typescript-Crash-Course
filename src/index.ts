@@ -151,4 +151,12 @@ const mike = new Person(1, "Mike")
 // console.log(emp.name);
 
 
-//! continue from 40:00
+// Generics
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4])
+let strArray = getArray<string>(["Ali","Bisma","Hadia"])
+
+//! 
